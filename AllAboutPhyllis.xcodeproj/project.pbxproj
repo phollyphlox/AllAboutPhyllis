@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70079466208A6E940071C13F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70079465208A6E940071C13F /* MapKit.framework */; };
+		70079468208A6ED40071C13F /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70079467208A6ED40071C13F /* mapViewController.swift */; };
+		7007946C208A84780071C13F /* PlacesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007946B208A84780071C13F /* PlacesTableView.swift */; };
 		700D5E3D208500A5007428C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5E3C208500A5007428C4 /* AppDelegate.swift */; };
 		700D5E3F208500A5007428C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5E3E208500A5007428C4 /* ViewController.swift */; };
 		700D5E42208500A5007428C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700D5E40208500A5007428C4 /* Main.storyboard */; };
 		700D5E44208500A8007428C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700D5E43208500A8007428C4 /* Assets.xcassets */; };
 		700D5E47208500A8007428C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700D5E45208500A8007428C4 /* LaunchScreen.storyboard */; };
+		700D5E4F20850942007428C4 /* HobbiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5E4E20850942007428C4 /* HobbiesTableView.swift */; };
+		700D5E5120851921007428C4 /* HobbyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5E5020851921007428C4 /* HobbyStruct.swift */; };
+		700D5E532087D0E0007428C4 /* HobbyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5E522087D0E0007428C4 /* HobbyDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70079465208A6E940071C13F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		70079467208A6ED40071C13F /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		7007946B208A84780071C13F /* PlacesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableView.swift; sourceTree = "<group>"; };
 		700D5E39208500A5007428C4 /* AllAboutPhyllis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllAboutPhyllis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		700D5E3C208500A5007428C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		700D5E3E208500A5007428C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		700D5E43208500A8007428C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		700D5E46208500A8007428C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		700D5E48208500A8007428C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700D5E4E20850942007428C4 /* HobbiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesTableView.swift; sourceTree = "<group>"; };
+		700D5E5020851921007428C4 /* HobbyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyStruct.swift; sourceTree = "<group>"; };
+		700D5E522087D0E0007428C4 /* HobbyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70079466208A6E940071C13F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70079464208A6E940071C13F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70079465208A6E940071C13F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		700D5E30208500A5007428C4 = {
 			isa = PBXGroup;
 			children = (
 				700D5E3B208500A5007428C4 /* AllAboutPhyllis */,
 				700D5E3A208500A5007428C4 /* Products */,
+				70079464208A6E940071C13F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +79,11 @@
 				700D5E3C208500A5007428C4 /* AppDelegate.swift */,
 				700D5E3E208500A5007428C4 /* ViewController.swift */,
 				700D5E40208500A5007428C4 /* Main.storyboard */,
+				7007946B208A84780071C13F /* PlacesTableView.swift */,
+				70079467208A6ED40071C13F /* mapViewController.swift */,
+				700D5E522087D0E0007428C4 /* HobbyDetails.swift */,
+				700D5E5020851921007428C4 /* HobbyStruct.swift */,
+				700D5E4E20850942007428C4 /* HobbiesTableView.swift */,
 				700D5E43208500A8007428C4 /* Assets.xcassets */,
 				700D5E45208500A8007428C4 /* LaunchScreen.storyboard */,
 				700D5E48208500A8007428C4 /* Info.plist */,
@@ -96,6 +123,11 @@
 				TargetAttributes = {
 					700D5E38208500A5007428C4 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700D5E532087D0E0007428C4 /* HobbyDetails.swift in Sources */,
 				700D5E3F208500A5007428C4 /* ViewController.swift in Sources */,
+				7007946C208A84780071C13F /* PlacesTableView.swift in Sources */,
+				700D5E5120851921007428C4 /* HobbyStruct.swift in Sources */,
+				70079468208A6ED40071C13F /* mapViewController.swift in Sources */,
+				700D5E4F20850942007428C4 /* HobbiesTableView.swift in Sources */,
 				700D5E3D208500A5007428C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
